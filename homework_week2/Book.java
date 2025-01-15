@@ -26,9 +26,17 @@ public class Book implements Borrowable {
         return this.borrowed;
     }
 
+    public String getTitle(){
+        return this.title;
+    }
+
+    public int getISBN(){
+        return this.isbn;
+    }
+
     @Override
     public String toString(){
-        String status = this.borrowed ? "[대출 가능]" : "[대출 중]";
+        String status = this.borrowed ? "[대출 중]" : "[대출 가능]";
         return status + " \""+this.title+"\" 저자: "+this.author+" (ISBN:"+this.isbn+")";
     }
 }
