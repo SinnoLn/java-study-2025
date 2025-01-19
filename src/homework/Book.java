@@ -34,7 +34,7 @@ public class Book implements Borrowable {
     public void printInfo() {
         if(borrowed) {
             //println하면 안됨
-            System.out.println("[대출 중] " + getBookType() + ":" + title + " (ISBN:"
+            System.out.println("[대출 중] " + getBookType() + ": \"" + title + "\" (ISBN:"
                     + isbn + ") -저자: " + author);
         }
         else {
